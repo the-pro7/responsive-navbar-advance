@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:is(::before, ::after) {
+  margin: inherit;
+  padding: inherit;
+  box-sizing: inherit;
+}
+
+img, picture, svg {
+  max-width: 100%;
+}
+
+.main {
+  background-color: #212529;
+  color: #fff;
+  border-bottom: 5px solid #228be6;
+  position: relative;
+  height: 70dvh;
+  font-family: "Nunito", sans-serif;
+}
+.main .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+.main .flex .padding-top {
+  padding-top: 1em;
+}
+.main .flex .has-underline {
+  border-bottom: 1.5px solid #fff;
+  padding-bottom: 0.5em;
+}
+.main .flex .nav-list {
+  width: 80%;
+  bottom: 15%;
+  margin: 0 0 0 1em;
+  font-size: 1.1rem;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start !important;
+  gap: 1em;
+}
+.main .flex .nav-list .item {
+  list-style: none;
+  width: 100%;
+}
+.main .flex .nav-list .item a {
+  color: #fff;
+  text-decoration: none;
+}
+.main .flex .nav-list li.button {
+  background-color: #fff;
+  border-radius: 20pt;
+  padding: 0.3em 1em;
+  width: unset;
+  transition: opacity 300ms ease-in;
+}
+.main .flex .nav-list li.button a {
+  z-index: 100;
+  color: #212529;
+}
+.main .flex .nav-list li.button:hover {
+  opacity: 0.7;
+}
+.main .flex .nav-list .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.1em;
+}
+.main .flex .nav-list .social li i {
+  font-size: 1.5rem;
+}
+.main .flex .ham-menu {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.main .flex .ham-menu .line {
+  display: block;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 10pt;
+}
+.main .flex .ham-menu .line1,
+.main .flex .ham-menu .line3 {
+  width: 40px;
+}
+.main .flex .ham-menu .line1:active {
+  transform: rotate(45deg) translateY(6px) translateX(-10px);
+}
+.main .flex .ham-menu .line2:active {
+  transform: rotate(-45deg) translateY(-20px) translateX(3px);
+}
+.main .flex .ham-menu:active .line3 {
+  opacity: 0;
+  display: none;
+}
+.main .flex .ham-menu .line2 {
+  width: 20px;
+  align-self: flex-start;
+}
+.main .flex .logo svg {
+  width: 15em;
+}/*# sourceMappingURL=style.css.map */
